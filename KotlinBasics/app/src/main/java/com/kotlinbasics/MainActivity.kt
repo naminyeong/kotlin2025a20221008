@@ -28,6 +28,7 @@ class MainActivity : ComponentActivity() {
             }
         }
         week02Variables()
+        week02Functions()
     }
 }
 
@@ -48,7 +49,7 @@ private fun week02Functions(){
         println("My name is $name and I'm $age years old")
     }
 
-    println(greet("Kotline"))
+    println(greet("Kotlin"))
     println("Sum: ${add(5, -71)}")
 
     introduce("Kim",7)
