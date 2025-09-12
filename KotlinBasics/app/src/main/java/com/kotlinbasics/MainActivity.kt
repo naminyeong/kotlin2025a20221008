@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.kotlinbasics.ui.theme.KotlinBasicsTheme
@@ -29,6 +29,30 @@ class MainActivity : ComponentActivity() {
         }
         week02Variables()
     }
+}
+
+private fun week02Functions(){
+//    println("Week02: Functions")
+//
+//    fun greet(name: String) = "Hello, $name!"
+//
+//    println(greet("Android developer"))
+
+    println("== Kotlin Functions ==")
+    fun greet(name: String): String{
+        return "Hello, $name!"
+    }
+
+    fun add(a: Int, b: Int)= a+b
+    fun introduce(name: String, age: Int=19){
+        println("My name is $name and I'm $age years old")
+    }
+
+    println(greet("Kotline"))
+    println("Sum: ${add(5, -71)}")
+
+    introduce("Kim",7)
+    introduce("Park")
 }
 
 private fun week02Variables(){
